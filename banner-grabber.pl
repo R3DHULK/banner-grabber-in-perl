@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use IO::Socket::INET;
 
-my $host = shift || die "Usage: $0 host [port]\n";
+my $host = shift || die "Usage: $0 host\n";
 my $port = shift || 80;
 
 my $socket = IO::Socket::INET->new(
